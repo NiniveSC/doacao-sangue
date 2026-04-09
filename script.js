@@ -14,8 +14,53 @@ form.addEventListener("submit", function (event) {
     const cidade = document.getElementById("cidade").value;
     const estado = document.getElementById("estado").value;
 
+    if (nome.split(" ").length < 2) {
+        alert("Digite nome e sobrenome.");
+        return;
+    }
 
+    if (!email.includes("@") || !email.includes(".")) {
+        alert("Email inválido.");
+        return;
+    }
 
+    if (idade < 16) {
+        alert("Idade mínima para doar é 16 anos.");
+        return;
+    }
+
+    if (peso < 50) {
+        alert("Peso mínimo para doação é 50kg.");
+        return;
+    }
+
+    if (!tipoSanguineo) {
+        alert("Selecione o tipo sanguíneo.");
+        return;
+    }
+
+    if (isNaN(telefone)) {
+        alert("Telefone deve conter apenas números.");
+        return;
+    }
+
+    if (!cidade || !estado) {
+        alert("Preencha todos os campos.");
+        return;
+    }
+
+    const doador = {
+        nome: nome,
+        email: email,
+        idade: idade,
+        peso: peso,
+        tipoSanguineo: tipoSanguineo,
+        telefone: telefone,
+        cidade: cidade,
+        estado: estado
+    };
+
+    doadores.push(doador);
 
 
 }
