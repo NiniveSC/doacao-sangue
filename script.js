@@ -2,7 +2,7 @@ const doadores = [];
 
 const form = document.getElementById("formDoacao");
 
-form.addEventListener("submit", function (event)) {
+form.addEventListener("submit", function (event) {
     event.preventDefault();
 
     const nome = document.getElementById("nome").value.trim();
