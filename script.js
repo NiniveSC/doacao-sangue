@@ -62,5 +62,20 @@ form.addEventListener("submit", function (event) {
 
     doadores.push(doador);
 
+    alert(`
+    Cadastro realizado com sucesso!
 
-}
+    Nome: ${nome}
+    Email: ${email}
+    Idade: ${idade}
+    Peso: ${peso} kg
+    Tipo Sanguíneo: ${tipoSanguineo}
+    Telefone: ${telefone}
+    Cidade: ${cidade}
+    Estado: ${estado}
+    `);
+
+    console.log(doadores);
+
+    form.reset();
+});
