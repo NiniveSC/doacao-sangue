@@ -4,10 +4,32 @@ body {
 }
 
 h1 {
-    background-color: rgb(219, 22, 22);
+    background-color: rgb(110, 11, 11);
     padding: 30px;
     display: flex;
     justify-content: center;
-    color: aliceblue; 
+    color: aliceblue;
     font-size: 40;
+}
+
+h2 {
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 250px;
+}
+
+.img img {
+    width: 400px;
 }
